@@ -1,0 +1,26 @@
+@import "./variables";
+@import "./body";
+@import "./responsive";
+
+.favorite-section{
+    background-color: $color-principal;
+    filter: opacity(25%);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.fav{
+    background-color: #fff;
+    height: 100vh;
+    width: 35%;
+    position: relative;
+    transform: translateX(182%);
+
+    &__icon{
+        @extend .icons;
+        color: black;
+    }
+}
+

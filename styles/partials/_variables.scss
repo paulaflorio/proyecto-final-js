@@ -1,0 +1,24 @@
+@import "./responsive";
+
+$color-principal:#9B6EA8; 
+
+.icons{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    padding: .2rem;
+    margin: 0 .3rem;
+    cursor: pointer;
+}
+
+.botones{
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: #9B6EA8;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    border: .1rem solid #191919;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}

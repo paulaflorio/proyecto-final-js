@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Authentique</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <h1 class="brand">Authentique</h1>
+            <nav class="nav">
+                <a href="" class="nav__item">Home</a>
+                <a href="" class="nav__item">Products</a>
+                <a href="" class="nav__item">Featured</a>
+                <a href="" class="nav__item">Reviews</a>
+            </nav>
+            <div class="icons">
+                <i class="fas fa-heart icons__item"></i>
+                <div class="shopping-cart">   
+                    <i class="fas fa-shopping-cart icons__item"></i>
+                    <div class="num-items">0</div>
+                    </div>
+                    <i class="fas fa-user icons__item"></i>
+            </div>
+            <i class="fas fa-bars btn-hamburger" id="nav-responsive"></i>
+        </div>
+    </header>
+    <section>
+        <article class="favorite-section">
+        </article>
+        <article class="cart-section">
+            <div class="cart" id="cart">
+                <i class="fas fa-times-circle cart__icon"></i> 
+                <div class="cart__title">
+                    <h2 class="cart__title__item">Your Shopping Cart</h2>
+                </div>
+                <div id="item">
+                    <!-- <div class="prod">
+                        <img src="./img/products/212-men.jpg" alt="" class="prod__img">
+                        <div class="prod__content">
+                            <span class="prod__content__title">nombre</span>
+                            <span class="prod__content__price">precio</span>
+                        </div>
+                        <span class="prod__quantity">cantidad</span>
+                        <i class="fas fa-trash-alt prod__remove"></i>
+                    </div> -->
+                </div>
+                <div id="cart-footer">  
+                    <!-- <div class="details">
+                        <span class="details__text">total</span>
+                        <span class="details__total">$</span>
+                    </div> -->
+                </div>
+            </div>
+        </article>
+        <article class="user-seccion"></article>
+    </section>
+    <section class="container">
+        <h2 class="heading">Latest <span class="heading__word">Products</span></h2>
+        <div class="products" id="products">
+
+        </div>
+    </section>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- SweetAlert CDN -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Mi script -->
+    <script src="./js/boton.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@import "./responsive";
+@import "./navbar";
+@import "./body";
+@import "./variables";
+
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: black;
+    padding: 1rem;
+
+
+    &__word{
+        color: #9B6EA8;
+    }
+}
+
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    padding: 4rem;
+    border:  .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+
+    @include laptop{
+        justify-content: space-around;
+    }
+}
+
+.product{
+    height: 38rem;
+    width: 32rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+
+    &__icons{
+        
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 1rem;
+        left: -10rem;
+        transition: all .4s;
+        
+    }
+
+    &__img{
+        height: 14rem;
+        filter: drop-shadow(0 .5rem 1rem rgba(0,0,0,.2));
+        margin: 2rem;
+        transition: all .4s;
+    
+        &:hover{
+        transform: scale(1.2);
+        }
+    }
+}
+
+.product:hover .product__icons{
+    left: 1rem
+}
+
+.content{
+    padding: 1.5rem;
+
+    &__title{
+        color: black;
+        font-size: 2rem;
+    }
+
+    &__price{
+        color: black;
+        font-size: 2rem;
+        font-weight: bolder;
+        padding-bottom: 1rem;
+
+        &__desc{
+            font-size: 1.5rem;
+            color: #9B6EA8;
+            text-decoration: line-through;
+        }
+    }
+
+    &__btn{
+        @extend .botones;
+
+        &:hover{
+            color: white;
+        }
+    }
+
+}
+

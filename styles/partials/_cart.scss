@@ -1,0 +1,147 @@
+@import "./variables";
+@import "./body";
+@import "./responsive";
+
+.cart-section{
+    position: fixed !important;
+    background-color:rgba(155, 110, 168, 0.4);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    z-index: 2;
+}
+
+.cart-section-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.cart{
+    background-color: #fff;
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    right: 0;
+
+    @include laptop{
+        width: 50%;
+    }
+
+    @include tablet{
+        width: 60%;
+    }
+
+    @include mobile{
+        width: 100%;
+    }
+
+    &__icon{
+        @extend .icons;
+        color: black;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+
+    }
+
+    &__title{
+        text-align: center;
+        height: 6rem;
+        background-color: #C39BD3;
+        border-bottom: .5rem solid $color-principal;
+
+        &__item{
+            font-size: 2.7rem;
+            padding: 1rem 0;
+        }
+    }
+}
+
+.prod{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__img{
+        height: 10rem;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 15rem;
+
+        &__title{
+            font-size: 2rem;
+            padding-bottom: .5rem;
+        }
+        &__price{
+            font-size: 2rem;
+        }
+    }
+
+    &__quantity{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__num{
+            font-size: 2rem;
+            color: black;
+        }
+
+        &__btn{
+            @extend .icons;
+            cursor: pointer;
+        }
+
+    }
+
+    &__remove{
+        @extend .icons;
+        cursor: pointer;
+    }   
+}
+
+.cart-text{
+    font-size: 3rem;
+    text-align: center;
+    padding: 4rem 0;
+    color: #191919;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 0;
+
+    &__text{
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__total{
+        font-size: 2.5rem;
+    }
+
+
+}
+
+.btn-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3rem;
+    &__item{
+        @extend .botones;
+    }
+}

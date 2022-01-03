@@ -1,0 +1,40 @@
+{
+    "productos": [
+        {
+            "nombre": "Bad Boy - Carolina Herrera",
+            "id": 0,
+            "precio": 15000,
+            "imgsrc": "./img/products/bad-boy.jpg"
+        },
+        {
+            "nombre": "One Million - Paco Rabanne",
+            "id": 1,
+            "precio": 14000,
+            "imgsrc": "./img/products/one-million.jpg"
+        },
+        {
+            "nombre": "212 Men - Carolina Herrera",
+            "id": 2,
+            "precio": 14500,
+            "imgsrc": "./img/products/212-men.jpg"
+        },
+        {
+            "nombre": "Black Opium - Yves Saint Laurent",
+            "id": 3,
+            "precio": 16500,
+            "imgsrc": "./img/products/black-opium.jpg"
+        },
+        {
+            "nombre": "Pure XS - Paco Rabanne",
+            "id": 4,
+            "precio": 16000,
+            "imgsrc": "./img/products/pure-xs.jpg"
+        },
+        {
+            "nombre": "Sauvage - Dior",
+            "id": 5,
+            "precio": 21000,
+            "imgsrc": "./img/products/sauvage.jpg"
+        }      
+    ]
+}
